@@ -1,0 +1,1346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00000000000000000000006D /* PerkakaskuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000008 /* PerkakaskuApp.swift */; };
+		00000000000000000000006E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000009 /* RootView.swift */; };
+		00000000000000000000006F /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000A /* APIConfig.swift */; };
+		000000000000000000000070 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000B /* APIClient.swift */; };
+		000000000000000000000071 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000C /* APIResponse.swift */; };
+		000000000000000000000072 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000D /* Endpoint.swift */; };
+		000000000000000000000073 /* SwiftDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000E /* SwiftDataStack.swift */; };
+		000000000000000000000074 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000F /* KeychainHelper.swift */; };
+		000000000000000000000075 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000010 /* URL+Extensions.swift */; };
+		000000000000000000000076 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000011 /* View+Extensions.swift */; };
+		000000000000000000000077 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000012 /* String+Extensions.swift */; };
+		000000000000000000000078 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000013 /* FileUtils.swift */; };
+		000000000000000000000079 /* ProcessingJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* ProcessingJob.swift */; };
+		00000000000000000000007A /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* Tool.swift */; };
+		00000000000000000000007B /* ProcessedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* ProcessedItem.swift */; };
+		00000000000000000000007C /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000017 /* AuthResponse.swift */; };
+		00000000000000000000007D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000018 /* APIService.swift */; };
+		00000000000000000000007E /* PDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000019 /* PDFService.swift */; };
+		00000000000000000000007F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001A /* ImageService.swift */; };
+		000000000000000000000080 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001B /* FileService.swift */; };
+		000000000000000000000081 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001C /* DownloadService.swift */; };
+		000000000000000000000082 /* ToolRegistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001D /* ToolRegistryService.swift */; };
+		000000000000000000000083 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001E /* AuthService.swift */; };
+		000000000000000000000084 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001F /* HomeView.swift */; };
+		000000000000000000000085 /* ToolCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000020 /* ToolCard.swift */; };
+		000000000000000000000086 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000021 /* RecentView.swift */; };
+		000000000000000000000087 /* ToolCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000022 /* ToolCatalogView.swift */; };
+		000000000000000000000088 /* ToolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000023 /* ToolDetailView.swift */; };
+		000000000000000000000089 /* ToolRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000024 /* ToolRowView.swift */; };
+		00000000000000000000008A /* PDFToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* PDFToolView.swift */; };
+		00000000000000000000008B /* PDFCompressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000026 /* PDFCompressView.swift */; };
+		00000000000000000000008C /* PDFMergeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000027 /* PDFMergeView.swift */; };
+		00000000000000000000008D /* PDFSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000028 /* PDFSplitView.swift */; };
+		00000000000000000000008E /* PDFToImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* PDFToImageView.swift */; };
+		00000000000000000000008F /* PDFToExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002A /* PDFToExcelView.swift */; };
+		000000000000000000000090 /* PDFToWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002B /* PDFToWordView.swift */; };
+		000000000000000000000091 /* PDFSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002C /* PDFSignatureView.swift */; };
+		000000000000000000000092 /* PDFPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002D /* PDFPasswordView.swift */; };
+		000000000000000000000093 /* PDFWatermarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002E /* PDFWatermarkView.swift */; };
+		000000000000000000000094 /* ImageToPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002F /* ImageToPDFView.swift */; };
+		000000000000000000000095 /* PDFKitPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000030 /* PDFKitPreviewView.swift */; };
+		000000000000000000000096 /* ImageToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000031 /* ImageToolView.swift */; };
+		000000000000000000000097 /* ImageCompressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* ImageCompressView.swift */; };
+		000000000000000000000098 /* ImageResizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* ImageResizeView.swift */; };
+		000000000000000000000099 /* BackgroundRemovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000034 /* BackgroundRemovalView.swift */; };
+		00000000000000000000009A /* PassportPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000035 /* PassportPhotoView.swift */; };
+		00000000000000000000009B /* ImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* ImageCropView.swift */; };
+		00000000000000000000009C /* HEICToJPGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000037 /* HEICToJPGView.swift */; };
+		00000000000000000000009D /* DocumentToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000038 /* DocumentToolView.swift */; };
+		00000000000000000000009E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000039 /* HistoryView.swift */; };
+		00000000000000000000009F /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003A /* HistoryRowView.swift */; };
+		0000000000000000000000A0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003B /* FavoritesView.swift */; };
+		0000000000000000000000A1 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003C /* PremiumView.swift */; };
+		0000000000000000000000A2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003D /* SettingsView.swift */; };
+		0000000000000000000000A3 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003E /* AuthView.swift */; };
+		0000000000000000000000A4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003F /* LoadingView.swift */; };
+		0000000000000000000000A5 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000040 /* EmptyStateView.swift */; };
+		0000000000000000000000A6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000041 /* ErrorView.swift */; };
+		0000000000000000000000A7 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* SuccessView.swift */; };
+		0000000000000000000000A8 /* FileImportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000043 /* FileImportButton.swift */; };
+		0000000000000000000000A9 /* ExportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* ExportButton.swift */; };
+		0000000000000000000000AA /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000045 /* SectionHeader.swift */; };
+		0000000000000000000000AD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000048 /* SwiftUI.framework */; };
+		0000000000000000000000AE /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000049 /* PDFKit.framework */; };
+		0000000000000000000000AF /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004A /* Vision.framework */; };
+		0000000000000000000000B0 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004B /* PhotosUI.framework */; };
+		0000000000000000000000B1 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004C /* UniformTypeIdentifiers.framework */; };
+		0000000000000000000000B2 /* PencilKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004D /* PencilKit.framework */; };
+		0000000000000000000000B3 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004E /* CoreImage.framework */; };
+		0000000000000000000000B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004F /* CoreGraphics.framework */; };
+		0000000000000000000000B5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000050 /* CoreData.framework */; };
+		0000000000000000000000B7 /* PerkakaskuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000046 /* PerkakaskuTests.swift */; };
+		0000000000000000000000BE /* PerkakaskuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000047 /* PerkakaskuUITests.swift */; };
+		0000000000000000000000D8 /* PhotoImportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000000D7 /* PhotoImportButton.swift */; };
+		000000000000000000000102 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000101 /* SplashView.swift */; };
+		000000000000000000000104 /* ToolWorkspaceComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000103 /* ToolWorkspaceComponents.swift */; };
+		000000000000000000000106 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000105 /* Theme.swift */; };
+		000000000000000000000108 /* QuickLookPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000107 /* QuickLookPreview.swift */; };
+		00000000000000000000010A /* ZIPBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000109 /* ZIPBuilder.swift */; };
+		00000000000000000000010C /* JSONFormatterToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010B /* JSONFormatterToolView.swift */; };
+		00000000000000000000010E /* OCRToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010D /* OCRToolView.swift */; };
+		000000000000000000000110 /* QRCodeToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010F /* QRCodeToolView.swift */; };
+		000000000000000000000112 /* WordCounterToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* WordCounterToolView.swift */; };
+		000000000000000000000114 /* WordToPDFToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000113 /* WordToPDFToolView.swift */; };
+		000000000000000000000116 /* ToolWorkspaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000115 /* ToolWorkspaceRouter.swift */; };
+		000000000000000000000118 /* BackendModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000117 /* BackendModels.swift */; };
+		00000000000000000000011A /* AppSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000119 /* AppSettingsService.swift */; };
+		00000000000000000000011C /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011B /* FavoritesService.swift */; };
+		00000000000000000000011E /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011D /* HistoryService.swift */; };
+		000000000000000000000120 /* VisionOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011F /* VisionOCRService.swift */; };
+		000000000000000000000122 /* VisionSegmentationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000121 /* VisionSegmentationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0000000000000000000000CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0000000000000000000000D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000000000000000000C6;
+			remoteInfo = Perkakasku;
+		};
+		0000000000000000000000D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0000000000000000000000D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000000000000000000C6;
+			remoteInfo = Perkakasku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000001 /* Perkakasku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perkakasku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000002 /* PerkakaskuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerkakaskuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000003 /* PerkakaskuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerkakaskuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000007 /* Perkakasku.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Perkakasku.entitlements; sourceTree = "<group>"; };
+		000000000000000000000008 /* PerkakaskuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkakaskuApp.swift; sourceTree = "<group>"; };
+		000000000000000000000009 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		00000000000000000000000A /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		00000000000000000000000B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		00000000000000000000000C /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		00000000000000000000000D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		00000000000000000000000E /* SwiftDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataStack.swift; sourceTree = "<group>"; };
+		00000000000000000000000F /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		000000000000000000000010 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		000000000000000000000011 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		000000000000000000000012 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		000000000000000000000013 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		000000000000000000000014 /* ProcessingJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingJob.swift; sourceTree = "<group>"; };
+		000000000000000000000015 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		000000000000000000000016 /* ProcessedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedItem.swift; sourceTree = "<group>"; };
+		000000000000000000000017 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		000000000000000000000018 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		000000000000000000000019 /* PDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFService.swift; sourceTree = "<group>"; };
+		00000000000000000000001A /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		00000000000000000000001B /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		00000000000000000000001C /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		00000000000000000000001D /* ToolRegistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolRegistryService.swift; sourceTree = "<group>"; };
+		00000000000000000000001E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		00000000000000000000001F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		000000000000000000000020 /* ToolCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCard.swift; sourceTree = "<group>"; };
+		000000000000000000000021 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
+		000000000000000000000022 /* ToolCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCatalogView.swift; sourceTree = "<group>"; };
+		000000000000000000000023 /* ToolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000024 /* ToolRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolRowView.swift; sourceTree = "<group>"; };
+		000000000000000000000025 /* PDFToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFToolView.swift; sourceTree = "<group>"; };
+		000000000000000000000026 /* PDFCompressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCompressView.swift; sourceTree = "<group>"; };
+		000000000000000000000027 /* PDFMergeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMergeView.swift; sourceTree = "<group>"; };
+		000000000000000000000028 /* PDFSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSplitView.swift; sourceTree = "<group>"; };
+		000000000000000000000029 /* PDFToImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFToImageView.swift; sourceTree = "<group>"; };
+		00000000000000000000002A /* PDFToExcelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFToExcelView.swift; sourceTree = "<group>"; };
+		00000000000000000000002B /* PDFToWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFToWordView.swift; sourceTree = "<group>"; };
+		00000000000000000000002C /* PDFSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSignatureView.swift; sourceTree = "<group>"; };
+		00000000000000000000002D /* PDFPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPasswordView.swift; sourceTree = "<group>"; };
+		00000000000000000000002E /* PDFWatermarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFWatermarkView.swift; sourceTree = "<group>"; };
+		00000000000000000000002F /* ImageToPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToPDFView.swift; sourceTree = "<group>"; };
+		000000000000000000000030 /* PDFKitPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitPreviewView.swift; sourceTree = "<group>"; };
+		000000000000000000000031 /* ImageToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToolView.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* ImageCompressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressView.swift; sourceTree = "<group>"; };
+		000000000000000000000033 /* ImageResizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizeView.swift; sourceTree = "<group>"; };
+		000000000000000000000034 /* BackgroundRemovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRemovalView.swift; sourceTree = "<group>"; };
+		000000000000000000000035 /* PassportPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportPhotoView.swift; sourceTree = "<group>"; };
+		000000000000000000000036 /* ImageCropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropView.swift; sourceTree = "<group>"; };
+		000000000000000000000037 /* HEICToJPGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEICToJPGView.swift; sourceTree = "<group>"; };
+		000000000000000000000038 /* DocumentToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentToolView.swift; sourceTree = "<group>"; };
+		000000000000000000000039 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		00000000000000000000003A /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
+		00000000000000000000003B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		00000000000000000000003C /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		00000000000000000000003D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		00000000000000000000003E /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		00000000000000000000003F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		000000000000000000000040 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		000000000000000000000041 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		000000000000000000000042 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		000000000000000000000043 /* FileImportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportButton.swift; sourceTree = "<group>"; };
+		000000000000000000000044 /* ExportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportButton.swift; sourceTree = "<group>"; };
+		000000000000000000000045 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		000000000000000000000046 /* PerkakaskuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkakaskuTests.swift; sourceTree = "<group>"; };
+		000000000000000000000047 /* PerkakaskuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkakaskuUITests.swift; sourceTree = "<group>"; };
+		000000000000000000000048 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		000000000000000000000049 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		00000000000000000000004A /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		00000000000000000000004B /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		00000000000000000000004C /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		00000000000000000000004D /* PencilKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PencilKit.framework; path = System/Library/Frameworks/PencilKit.framework; sourceTree = SDKROOT; };
+		00000000000000000000004E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		00000000000000000000004F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		000000000000000000000050 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		000000000000000000000051 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Developer/Library/Frameworks/XCTest.framework; sourceTree = PLATFORM_DIR; };
+		0000000000000000000000D7 /* PhotoImportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImportButton.swift; sourceTree = "<group>"; };
+		000000000000000000000101 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		000000000000000000000103 /* ToolWorkspaceComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolWorkspaceComponents.swift; sourceTree = "<group>"; };
+		000000000000000000000105 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		000000000000000000000107 /* QuickLookPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookPreview.swift; sourceTree = "<group>"; };
+		000000000000000000000109 /* ZIPBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIPBuilder.swift; sourceTree = "<group>"; };
+		00000000000000000000010B /* JSONFormatterToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFormatterToolView.swift; sourceTree = "<group>"; };
+		00000000000000000000010D /* OCRToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRToolView.swift; sourceTree = "<group>"; };
+		00000000000000000000010F /* QRCodeToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeToolView.swift; sourceTree = "<group>"; };
+		000000000000000000000111 /* WordCounterToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCounterToolView.swift; sourceTree = "<group>"; };
+		000000000000000000000113 /* WordToPDFToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordToPDFToolView.swift; sourceTree = "<group>"; };
+		000000000000000000000115 /* ToolWorkspaceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolWorkspaceRouter.swift; sourceTree = "<group>"; };
+		000000000000000000000117 /* BackendModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendModels.swift; sourceTree = "<group>"; };
+		000000000000000000000119 /* AppSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsService.swift; sourceTree = "<group>"; };
+		00000000000000000000011B /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		00000000000000000000011D /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		00000000000000000000011F /* VisionOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRService.swift; sourceTree = "<group>"; };
+		000000000000000000000121 /* VisionSegmentationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSegmentationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0000000000000000000000B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000000AD /* SwiftUI.framework in Frameworks */,
+				0000000000000000000000AE /* PDFKit.framework in Frameworks */,
+				0000000000000000000000AF /* Vision.framework in Frameworks */,
+				0000000000000000000000B0 /* PhotosUI.framework in Frameworks */,
+				0000000000000000000000B1 /* UniformTypeIdentifiers.framework in Frameworks */,
+				0000000000000000000000B2 /* PencilKit.framework in Frameworks */,
+				0000000000000000000000B3 /* CoreImage.framework in Frameworks */,
+				0000000000000000000000B4 /* CoreGraphics.framework in Frameworks */,
+				0000000000000000000000B5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000052 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000100 /* DesignSystem */,
+				000000000000000000000053 /* Networking */,
+				000000000000000000000054 /* Storage */,
+				000000000000000000000055 /* Security */,
+				000000000000000000000056 /* Extensions */,
+				000000000000000000000057 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		000000000000000000000053 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000000A /* APIConfig.swift */,
+				00000000000000000000000B /* APIClient.swift */,
+				00000000000000000000000C /* APIResponse.swift */,
+				00000000000000000000000D /* Endpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		000000000000000000000054 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000000E /* SwiftDataStack.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		000000000000000000000055 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000000F /* KeychainHelper.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		000000000000000000000056 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000010 /* URL+Extensions.swift */,
+				000000000000000000000011 /* View+Extensions.swift */,
+				000000000000000000000012 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		000000000000000000000057 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000109 /* ZIPBuilder.swift */,
+				000000000000000000000107 /* QuickLookPreview.swift */,
+				000000000000000000000013 /* FileUtils.swift */,
+				000000000000000000000014 /* ProcessingJob.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		000000000000000000000058 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000117 /* BackendModels.swift */,
+				000000000000000000000015 /* Tool.swift */,
+				000000000000000000000016 /* ProcessedItem.swift */,
+				000000000000000000000017 /* AuthResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000059 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000121 /* VisionSegmentationService.swift */,
+				00000000000000000000011F /* VisionOCRService.swift */,
+				00000000000000000000011D /* HistoryService.swift */,
+				00000000000000000000011B /* FavoritesService.swift */,
+				000000000000000000000119 /* AppSettingsService.swift */,
+				000000000000000000000018 /* APIService.swift */,
+				000000000000000000000019 /* PDFService.swift */,
+				00000000000000000000001A /* ImageService.swift */,
+				00000000000000000000001B /* FileService.swift */,
+				00000000000000000000001C /* DownloadService.swift */,
+				00000000000000000000001D /* ToolRegistryService.swift */,
+				00000000000000000000001E /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00000000000000000000005A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000005B /* Home */,
+				00000000000000000000005C /* Tools */,
+				00000000000000000000005D /* PDF */,
+				00000000000000000000005E /* Images */,
+				00000000000000000000005F /* Documents */,
+				000000000000000000000060 /* History */,
+				000000000000000000000061 /* Favorites */,
+				000000000000000000000062 /* Premium */,
+				000000000000000000000063 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		00000000000000000000005B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000001F /* HomeView.swift */,
+				000000000000000000000020 /* ToolCard.swift */,
+				000000000000000000000021 /* RecentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		00000000000000000000005C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000115 /* ToolWorkspaceRouter.swift */,
+				000000000000000000000022 /* ToolCatalogView.swift */,
+				000000000000000000000023 /* ToolDetailView.swift */,
+				000000000000000000000024 /* ToolRowView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		00000000000000000000005D /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000025 /* PDFToolView.swift */,
+				000000000000000000000026 /* PDFCompressView.swift */,
+				000000000000000000000027 /* PDFMergeView.swift */,
+				000000000000000000000028 /* PDFSplitView.swift */,
+				000000000000000000000029 /* PDFToImageView.swift */,
+				00000000000000000000002A /* PDFToExcelView.swift */,
+				00000000000000000000002B /* PDFToWordView.swift */,
+				00000000000000000000002C /* PDFSignatureView.swift */,
+				00000000000000000000002D /* PDFPasswordView.swift */,
+				00000000000000000000002E /* PDFWatermarkView.swift */,
+				00000000000000000000002F /* ImageToPDFView.swift */,
+				000000000000000000000030 /* PDFKitPreviewView.swift */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		00000000000000000000005E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000031 /* ImageToolView.swift */,
+				000000000000000000000032 /* ImageCompressView.swift */,
+				000000000000000000000033 /* ImageResizeView.swift */,
+				000000000000000000000034 /* BackgroundRemovalView.swift */,
+				000000000000000000000035 /* PassportPhotoView.swift */,
+				000000000000000000000036 /* ImageCropView.swift */,
+				000000000000000000000037 /* HEICToJPGView.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		00000000000000000000005F /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000113 /* WordToPDFToolView.swift */,
+				000000000000000000000111 /* WordCounterToolView.swift */,
+				00000000000000000000010F /* QRCodeToolView.swift */,
+				00000000000000000000010D /* OCRToolView.swift */,
+				00000000000000000000010B /* JSONFormatterToolView.swift */,
+				000000000000000000000038 /* DocumentToolView.swift */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		000000000000000000000060 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000039 /* HistoryView.swift */,
+				00000000000000000000003A /* HistoryRowView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		000000000000000000000061 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000003B /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		000000000000000000000062 /* Premium */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000003C /* PremiumView.swift */,
+			);
+			path = Premium;
+			sourceTree = "<group>";
+		};
+		000000000000000000000063 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000003D /* SettingsView.swift */,
+				00000000000000000000003E /* AuthView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		000000000000000000000064 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000101 /* SplashView.swift */,
+				000000000000000000000008 /* PerkakaskuApp.swift */,
+				000000000000000000000009 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000065 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000103 /* ToolWorkspaceComponents.swift */,
+				00000000000000000000003F /* LoadingView.swift */,
+				000000000000000000000040 /* EmptyStateView.swift */,
+				000000000000000000000041 /* ErrorView.swift */,
+				000000000000000000000042 /* SuccessView.swift */,
+				000000000000000000000043 /* FileImportButton.swift */,
+				000000000000000000000044 /* ExportButton.swift */,
+				000000000000000000000045 /* SectionHeader.swift */,
+				0000000000000000000000D7 /* PhotoImportButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		000000000000000000000066 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* Info.plist */,
+				000000000000000000000007 /* Perkakasku.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		000000000000000000000067 /* Perkakasku */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000064 /* App */,
+				000000000000000000000052 /* Core */,
+				000000000000000000000058 /* Models */,
+				000000000000000000000059 /* Services */,
+				00000000000000000000005A /* Features */,
+				000000000000000000000065 /* Components */,
+				000000000000000000000066 /* Resources */,
+				00000000000000000000006A /* PerkakaskuTests */,
+				00000000000000000000006B /* PerkakaskuUITests */,
+			);
+			path = Perkakasku;
+			sourceTree = "<group>";
+		};
+		000000000000000000000068 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000001 /* Perkakasku.app */,
+				000000000000000000000002 /* PerkakaskuTests.xctest */,
+				000000000000000000000003 /* PerkakaskuUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000069 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000048 /* SwiftUI.framework */,
+				000000000000000000000049 /* PDFKit.framework */,
+				00000000000000000000004A /* Vision.framework */,
+				00000000000000000000004B /* PhotosUI.framework */,
+				00000000000000000000004C /* UniformTypeIdentifiers.framework */,
+				00000000000000000000004D /* PencilKit.framework */,
+				00000000000000000000004E /* CoreImage.framework */,
+				00000000000000000000004F /* CoreGraphics.framework */,
+				000000000000000000000050 /* CoreData.framework */,
+				000000000000000000000051 /* XCTest.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		00000000000000000000006A /* PerkakaskuTests */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* Info.plist */,
+				000000000000000000000046 /* PerkakaskuTests.swift */,
+			);
+			path = PerkakaskuTests;
+			sourceTree = "<group>";
+		};
+		00000000000000000000006B /* PerkakaskuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000006 /* Info.plist */,
+				000000000000000000000047 /* PerkakaskuUITests.swift */,
+			);
+			path = PerkakaskuUITests;
+			sourceTree = "<group>";
+		};
+		00000000000000000000006C = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000067 /* Perkakasku */,
+				000000000000000000000068,
+				000000000000000000000069,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000100 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000105 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0000000000000000000000C6 /* Perkakasku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000000000000000000C5 /* Build configuration list for PBXNativeTarget "Perkakasku" */;
+			buildPhases = (
+				0000000000000000000000AB /* Sources */,
+				0000000000000000000000AC /* Resources */,
+				0000000000000000000000B6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Perkakasku;
+			packageProductDependencies = (
+			);
+			productName = Perkakasku;
+			productReference = 000000000000000000000001 /* Perkakasku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0000000000000000000000CC /* PerkakaskuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000000000000000000C9 /* Build configuration list for PBXNativeTarget "PerkakaskuTests" */;
+			buildPhases = (
+				0000000000000000000000B9 /* Sources */,
+				0000000000000000000000BA /* Resources */,
+				0000000000000000000000BC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0000000000000000000000CB /* PBXTargetDependency */,
+			);
+			name = PerkakaskuTests;
+			packageProductDependencies = (
+			);
+			productName = PerkakaskuTests;
+			productReference = 000000000000000000000002 /* PerkakaskuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0000000000000000000000D2 /* PerkakaskuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000000000000000000CF /* Build configuration list for PBXNativeTarget "PerkakaskuUITests" */;
+			buildPhases = (
+				0000000000000000000000BF /* Sources */,
+				0000000000000000000000C0 /* Resources */,
+				0000000000000000000000C2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0000000000000000000000D1 /* PBXTargetDependency */,
+			);
+			name = PerkakaskuUITests;
+			packageProductDependencies = (
+			);
+			productName = PerkakaskuUITests;
+			productReference = 000000000000000000000003 /* PerkakaskuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0000000000000000000000D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					0000000000000000000000C6 = {
+						CreatedOnToolsVersion = 27.1;
+						LastSwiftMigration = 2710;
+					};
+					0000000000000000000000CC = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 0000000000000000000000C6;
+					};
+					0000000000000000000000D2 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 0000000000000000000000C6;
+					};
+				};
+			};
+			buildConfigurationList = 0000000000000000000000D6 /* Build configuration list for PBXProject "Perkakasku" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00000000000000000000006C;
+			productRefGroup = 000000000000000000000068;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0000000000000000000000C6 /* Perkakasku */,
+				0000000000000000000000CC /* PerkakaskuTests */,
+				0000000000000000000000D2 /* PerkakaskuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0000000000000000000000AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0000000000000000000000AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000102 /* SplashView.swift in Sources */,
+				000000000000000000000104 /* ToolWorkspaceComponents.swift in Sources */,
+				000000000000000000000106 /* Theme.swift in Sources */,
+				000000000000000000000108 /* QuickLookPreview.swift in Sources */,
+				00000000000000000000010A /* ZIPBuilder.swift in Sources */,
+				00000000000000000000010C /* JSONFormatterToolView.swift in Sources */,
+				00000000000000000000010E /* OCRToolView.swift in Sources */,
+				000000000000000000000110 /* QRCodeToolView.swift in Sources */,
+				000000000000000000000112 /* WordCounterToolView.swift in Sources */,
+				000000000000000000000114 /* WordToPDFToolView.swift in Sources */,
+				000000000000000000000116 /* ToolWorkspaceRouter.swift in Sources */,
+				000000000000000000000118 /* BackendModels.swift in Sources */,
+				00000000000000000000011A /* AppSettingsService.swift in Sources */,
+				00000000000000000000011C /* FavoritesService.swift in Sources */,
+				00000000000000000000011E /* HistoryService.swift in Sources */,
+				000000000000000000000120 /* VisionOCRService.swift in Sources */,
+				000000000000000000000122 /* VisionSegmentationService.swift in Sources */,
+				00000000000000000000006D /* PerkakaskuApp.swift in Sources */,
+				00000000000000000000006E /* RootView.swift in Sources */,
+				00000000000000000000006F /* APIConfig.swift in Sources */,
+				000000000000000000000070 /* APIClient.swift in Sources */,
+				000000000000000000000071 /* APIResponse.swift in Sources */,
+				000000000000000000000072 /* Endpoint.swift in Sources */,
+				000000000000000000000073 /* SwiftDataStack.swift in Sources */,
+				000000000000000000000074 /* KeychainHelper.swift in Sources */,
+				000000000000000000000075 /* URL+Extensions.swift in Sources */,
+				000000000000000000000076 /* View+Extensions.swift in Sources */,
+				000000000000000000000077 /* String+Extensions.swift in Sources */,
+				000000000000000000000078 /* FileUtils.swift in Sources */,
+				000000000000000000000079 /* ProcessingJob.swift in Sources */,
+				00000000000000000000007A /* Tool.swift in Sources */,
+				00000000000000000000007B /* ProcessedItem.swift in Sources */,
+				00000000000000000000007C /* AuthResponse.swift in Sources */,
+				00000000000000000000007D /* APIService.swift in Sources */,
+				00000000000000000000007E /* PDFService.swift in Sources */,
+				00000000000000000000007F /* ImageService.swift in Sources */,
+				000000000000000000000080 /* FileService.swift in Sources */,
+				000000000000000000000081 /* DownloadService.swift in Sources */,
+				000000000000000000000082 /* ToolRegistryService.swift in Sources */,
+				000000000000000000000083 /* AuthService.swift in Sources */,
+				000000000000000000000084 /* HomeView.swift in Sources */,
+				000000000000000000000085 /* ToolCard.swift in Sources */,
+				000000000000000000000086 /* RecentView.swift in Sources */,
+				000000000000000000000087 /* ToolCatalogView.swift in Sources */,
+				000000000000000000000088 /* ToolDetailView.swift in Sources */,
+				000000000000000000000089 /* ToolRowView.swift in Sources */,
+				00000000000000000000008A /* PDFToolView.swift in Sources */,
+				00000000000000000000008B /* PDFCompressView.swift in Sources */,
+				00000000000000000000008C /* PDFMergeView.swift in Sources */,
+				00000000000000000000008D /* PDFSplitView.swift in Sources */,
+				00000000000000000000008E /* PDFToImageView.swift in Sources */,
+				00000000000000000000008F /* PDFToExcelView.swift in Sources */,
+				000000000000000000000090 /* PDFToWordView.swift in Sources */,
+				000000000000000000000091 /* PDFSignatureView.swift in Sources */,
+				000000000000000000000092 /* PDFPasswordView.swift in Sources */,
+				000000000000000000000093 /* PDFWatermarkView.swift in Sources */,
+				000000000000000000000094 /* ImageToPDFView.swift in Sources */,
+				000000000000000000000095 /* PDFKitPreviewView.swift in Sources */,
+				000000000000000000000096 /* ImageToolView.swift in Sources */,
+				000000000000000000000097 /* ImageCompressView.swift in Sources */,
+				000000000000000000000098 /* ImageResizeView.swift in Sources */,
+				000000000000000000000099 /* BackgroundRemovalView.swift in Sources */,
+				00000000000000000000009A /* PassportPhotoView.swift in Sources */,
+				00000000000000000000009B /* ImageCropView.swift in Sources */,
+				00000000000000000000009C /* HEICToJPGView.swift in Sources */,
+				00000000000000000000009D /* DocumentToolView.swift in Sources */,
+				00000000000000000000009E /* HistoryView.swift in Sources */,
+				00000000000000000000009F /* HistoryRowView.swift in Sources */,
+				0000000000000000000000A0 /* FavoritesView.swift in Sources */,
+				0000000000000000000000A1 /* PremiumView.swift in Sources */,
+				0000000000000000000000A2 /* SettingsView.swift in Sources */,
+				0000000000000000000000A3 /* AuthView.swift in Sources */,
+				0000000000000000000000A4 /* LoadingView.swift in Sources */,
+				0000000000000000000000A5 /* EmptyStateView.swift in Sources */,
+				0000000000000000000000A6 /* ErrorView.swift in Sources */,
+				0000000000000000000000A7 /* SuccessView.swift in Sources */,
+				0000000000000000000000A8 /* FileImportButton.swift in Sources */,
+				0000000000000000000000D8 /* PhotoImportButton.swift in Sources */,
+				0000000000000000000000A9 /* ExportButton.swift in Sources */,
+				0000000000000000000000AA /* SectionHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000000B7 /* PerkakaskuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000000BE /* PerkakaskuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0000000000000000000000CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0000000000000000000000C6 /* Perkakasku */;
+			targetProxy = 0000000000000000000000CA /* PBXContainerItemProxy */;
+		};
+		0000000000000000000000D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0000000000000000000000C6 /* Perkakasku */;
+			targetProxy = 0000000000000000000000D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0000000000000000000000C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = Perkakasku/Resources/Perkakasku.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Perkakasku/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		0000000000000000000000C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = Perkakasku/Resources/Perkakasku.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Perkakasku/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		0000000000000000000000C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Perkakasku/PerkakaskuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Perkakasku.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Perkakasku";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		0000000000000000000000C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Perkakasku/PerkakaskuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Perkakasku.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Perkakasku";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		0000000000000000000000CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Perkakasku/PerkakaskuUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Perkakasku;
+				USES_XCTRUNNER = YES;
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		0000000000000000000000CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Perkakasku/PerkakaskuUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Perkakasku;
+				USES_XCTRUNNER = YES;
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		0000000000000000000000D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		0000000000000000000000D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_DECLARATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_UNCONDITIONAL_BRANCH = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.perkakasku.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0000000000000000000000C5 /* Build configuration list for PBXNativeTarget "Perkakasku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000000000000000000C3 /* Debug */,
+				0000000000000000000000C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0000000000000000000000C9 /* Build configuration list for PBXNativeTarget "PerkakaskuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000000000000000000C7 /* Debug */,
+				0000000000000000000000C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0000000000000000000000CF /* Build configuration list for PBXNativeTarget "PerkakaskuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000000000000000000CD /* Debug */,
+				0000000000000000000000CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0000000000000000000000D6 /* Build configuration list for PBXProject "Perkakasku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000000000000000000D4 /* Debug */,
+				0000000000000000000000D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0000000000000000000000D3 /* Project object */;
+}

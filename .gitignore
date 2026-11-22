@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode user data, local build products & caches
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+*.moved-aside
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+*.xcresult
+ModuleCache.noindex/
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+
+# Environment variables, API keys, certificates & private credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.cer
+*.mobileprovision
+*.provisionprofile
+GoogleService-Info.plist
+*Secrets*.swift
+*Credentials*.swift
+*.secrets.xcconfig
